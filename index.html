@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>_the.artvibes</title>
+
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/tailwind.css">
+
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="./assets/images/favicon/site.webmanifest">
+    <link rel="mask-icon" href="./assets/images/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@200;400;500;700&display=swap" rel="stylesheet">
+</head>
+
+<body class="bg-white overflow-x-hidden">
+
+    <section class="container mx-auto flex items-center md:items-start h-screen md:h-auto">
+        <div class="flex flex-col py-10 px-4 md:py-24 md:px-10">
+            <div class="flex flex-col space-y-2 md:space-y-8">
+                <div class="relative">
+                    <div class="relative flex flex-col md:w-1/2">
+                        <div class="flex">
+                            <span class="text-sm tracking-wider">Hi! My Name is <span class="cursor-pointer"
+                                    id="name">Mitali Chikhale</span>
+                            </span>
+                        </div>
+                        <div class="hidden absolute top-6 right-0 md:flex items-baseline" id="info">
+                            <svg width="44" height="34" viewBox="0 0 44 34" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M1 0L0.016845 4.51295L4.41675 3.10791L1 0ZM42.9781 33.378C43.1987 33.3901 43.3873 33.221 43.3994 33.0004C43.4115 32.7799 43.2425 32.5913 43.0219 32.5792L42.9781 33.378ZM1.72011 3.56851C6.05541 15.2158 18.3241 32.0279 42.9781 33.378L43.0219 32.5792C18.7832 31.2518 6.7328 14.7423 2.46986 3.28944L1.72011 3.56851Z"
+                                    fill="black" />
+                            </svg>
+                            <span class="font-light text-xs ml-2">Hover Me</span>
+                        </div>
+                    </div>
+                    <img src="./assets/images/profile.png" id="image"
+                        class="hidden duration-300 transition-all absolute -top-4 right-0 w-36" alt="" srcset="" />
+                </div>
+                <h1 class="tracking-wider text-6xl md:text-8xl font-medium">I'm<br />self taught<br />artist</h1>
+            </div>
+            <div class="flex justify-center flex-col">
+                <span class="text-lg font-medium cursor-pointer mt-24">Explore my arts</span>
+                <div class="w-32">
+                    <hr class="h-1 bg-black">
+                </div>
+            </div>
+        </div>
+        <div class="hidden md:block relative flex-1">
+            <div class="absolute flex justify-center items-center space-x-4 -top-16 right-0 left-0">
+                <div class="grid grid-cols-1 gap-4 justify-items-center w-52">
+                    <img src="./assets/images/art/1.jpg" class="shadow-sm" alt="" srcset="" />
+                    <img src="./assets/images/art/1.jpg" class="shadow-sm" alt="" srcset="" />
+                    <img src="./assets/images/art/1.jpg" class="shadow-sm" alt="" srcset="" />
+                </div>
+                <div class="grid grid-cols-1 gap-4 justify-items-center w-52 mt-14">
+                    <img src="./assets/images/art/1.jpg" class="shadow-sm" alt="" srcset="" />
+                    <img src="./assets/images/art/1.jpg" class="shadow-sm" alt="" srcset="" />
+                    <img src="./assets/images/art/1.jpg" class="shadow-sm" alt="" srcset="" />
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="container mx-auto p-4 md:py-24 md:px-10">
+        <div class="flex flex-col space-y-3">
+            <span class="text-xs font-medium">About me</span>
+            <p class="text-xl md:text-3xl font-semibold">Working in TCS as a Software Developer & Analyst, I
+                started sketching in 2019 as my hobby.
+            </p>
+        </div>
+        <div class="grid grid-cols-3 md:gap-4 mt-12">
+            <img src="./assets/images/art/1.jpg" class="shadow-sm" alt="" srcset="" />
+            <img src="./assets/images/art/1.jpg" class="shadow-sm" alt="" srcset="" />
+            <img src="./assets/images/art/1.jpg" class="shadow-sm" alt="" srcset="" />
+            <img src="./assets/images/art/1.jpg" class="shadow-sm" alt="" srcset="" />
+            <img src="./assets/images/art/1.jpg" class="shadow-sm" alt="" srcset="" />
+            <img src="./assets/images/art/1.jpg" class="shadow-sm" alt="" srcset="" />
+        </div>
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <!-- <script>
+        $(function () {
+            async function getInstagramPictures(profileName) {
+                const baseUrl = "https://www.instagram.com";
+                const profileUrl = `${baseUrl}/${profileName}`;
+                const jsonDataUrl = `${profileUrl}/?__a=1`;
+
+                const response = await fetch(jsonDataUrl, {
+                    mode: "no-cors",
+                    headers: {
+                        "Access-Control-Allow-Origin": "*",
+                    }
+                });
+                const jsonData = await response.json();
+                const pictures = jsonData.graphql.user.edge_owner_to_timeline_media.edges;
+
+                if (response.ok) {
+                    return pictures;
+                } else {
+                    throw new Error(pictures);
+                }
+            }
+
+            getInstagramPictures("_the.artvibes")
+                .then(pictures => console.log("Pictures:", pictures))
+                .catch(error => console.error("Error:", error));
+        });
+    </script> -->
+    <script>
+        $(document).ready(function () {
+            /* $.ajax({
+                url: "https://www.instagram.com/_the.artvibes/?__a=1",
+                dataType: "json",
+                headers: {
+                    "accept": "application/json",
+                    "Access-Control-Allow-Origin": "*",
+                    'Content-Type': 'application/x-www-form-urlencoded'
+                },
+                success: function (res) {
+                    // $("#results").append(html);
+                    console.log(res)
+                }
+            }); */
+
+            $("#name").hover(
+                function () {
+                    $("#image").removeClass("hidden");
+                    $("#info").addClass("opacity-0");
+                },
+                function () {
+                    $("#image").addClass("hidden");
+                    $("#info").removeClass("opacity-0");
+                }
+            );
+        });
+    </script>
+</body>
+
+</html>
