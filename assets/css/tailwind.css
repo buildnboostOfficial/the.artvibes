@@ -1089,6 +1089,12 @@ video {
   transition-duration: 300ms;
 }
 
+.hover\:scale-105:hover {
+  --tw-scale-x: 1.05;
+  --tw-scale-y: 1.05;
+  transform: var(--tw-transform);
+}
+
 @media (min-width: 768px) {
   .md\:block {
     display: block;
