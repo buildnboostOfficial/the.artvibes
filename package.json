@@ -3,7 +3,6 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "homepage": "https://buildnboostofficial.github.io/the.artvibes/",
   "scripts": {
     "watch": "tailwindcss build -o ./assets/css/tailwind.css --watch"
   },
